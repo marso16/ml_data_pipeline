@@ -24,6 +24,7 @@ jobs:
 
       - name: Install Dependencies
         run: poetry install
+        working-directory: ./ml_data_pipeline
 
       - name: Run Tests
         run: poetry run invoke test
