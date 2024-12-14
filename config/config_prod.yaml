@@ -1,0 +1,11 @@
+mlflow:
+  tracking_uri: "http://127.0.0.1:5001"
+  experiment_name: "production_exp_1"
+data_loader:
+  file_path: "data/sample_data.csv"
+  file_type: "csv"
+transformation:
+  normalize: true
+  scaling_method: "standard"
+model:
+  type: "linear" # Options: "linear" or "tree"
